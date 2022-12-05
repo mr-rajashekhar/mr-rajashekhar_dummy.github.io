@@ -1,0 +1,60 @@
+# Top Menu
+topmenu:
+  - title: Faculty
+    url: ""
+
+  - title: Students
+    url: "about/"
+
+  - title: Projects
+    url: "contact/"
+
+  - title: Publications
+    url: "about/"
+
+# Footer Menu
+footermenu:
+  - title: Home
+    url: ""
+
+  - title: Privacy Policy
+    url: "privacy-policy/"
+
+  - title: Contact
+    url: "contact/"
+
+#sponsors
+images:
+  - title: SERB
+    url: "www.google.com"
+    path: assets/images/sponsors/1.png
+  - title: SERB
+    url: "www.google.com"
+    path: assets/images/sponsors/2.png
+  - title: SERB
+    url: "www.google.com"
+    path: assets/images/sponsors/3.png
+  - title: SERB
+    url: "www.google.com"
+    path: assets/images/sponsors/4.jpg
+  - title: SERB
+    url: "www.google.com"
+    path: assets/images/sponsors/5.jpg
+  - title: SERB
+    url: "www.google.com"
+    path: assets/images/sponsors/6.jpg
+  - title: SERB
+    url: "www.google.com"
+    path: assets/images/sponsors/7.png
+  - title: SERB
+    url: "www.google.com"
+    path: assets/images/sponsors/8.png
+  - title: SERB
+    url: "www.google.com"
+    path: assets/images/sponsors/9.png
+  - title: SERB
+    url: "www.google.com"
+    path: assets/images/sponsors/10.png
+  - title: SERB
+    url: "www.google.com"
+    path: assets/images/sponsors/11.png
