@@ -1,0 +1,81 @@
+---
+title: Home
+layout: default
+background: "/img/bg-index.jpg"
+---
+
+{% if page.url == "/" %}
+<img
+  class="intro"
+  height="400"
+  src="{{site.baseurl}}/assets/images/board.jpg"
+  style="margin: 0px; opacity: 0.5"
+/>
+<div class="about" >
+  <br>
+    The <b>Power and Energy Group (PEG)</b> at IIT-Dharwad is the amalgamation
+    of expertise in multiple areas, including power electronics, power systems,
+    protection, magnetics, design and fabrication of electronic systems, and
+    industrial design. The group is currently executing funded research projects
+    from Industry and scientific bodies such as DST and SERB in areas including
+    DC Circuit breakers, Effects of renewable generation on Power System
+    Dynamics and protection, and Electric vehicles.</br> For more information please
+    see the Lab Wiki here and watch our latest updates.</br> For open positions, see
+    here.</br> NOTE: Current B. Tech students can take up projects through one of the
+    following modes. Please email one of the faculty members.
+    <ul>
+      <li>R&D Project (6 credits)</li>
+
+      <li>  B. Tech Project (6 Credits)</li>
+        
+      <li>Additional Learning Opportunity (ALO)</li>
+        
+      <li> Summer internships or Co-op during the semester</li>
+    </ul>
+  </p>
+</div>
+<hr />
+{% endif %}
+<section class="row">
+  <div>
+    <center><h1 style="margin-bottom: 8px">Latest News</h1></center>
+    <div class="row">
+      {% for post in paginator.posts %} {% unless post.featured == true %}
+      <div class="col-md-3 mb-5">{% include postbox.html %}</div>
+      {% endunless %} {% endfor %}
+    </div>
+  </div>
+</section>
+
+<center><h1 style="margin-bottom: 8px">Our Sponsors</h1></center>
+<section class="row">
+  <div>
+    <div class="row">
+      {% for image in site.data.menus.images %}
+      <div class="col-md-2 mb-5">
+        <!-- <div class="card">
+          <a href="{{image.url}}">
+            <img
+              class="rounded mb-4"
+              src="{{ site.baseurl }}/{{ image.path }}"
+              alt="{{ image.title }}"
+            />
+          </a>
+        </div> -->
+        {% include Sponsors.html %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- {% for item in site.data.menus.topmenu %}
+<li class="nav-item">
+  <a
+    class="nav-link px-3 {% if item.class %}{{item.class}}{% endif %}"
+    href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}"
+    alt="{{item.title}}"
+    >{{item.title}}</a
+  >
+</li>
+{% endfor %} -->
